@@ -1,0 +1,113 @@
+.prodListSec1{
+    padding: 4rem 0;
+}
+
+.prodListSec2{
+    padding: 3rem 0;
+}
+
+.productItem {
+    padding: 1rem;
+    background-color: #f6f6f6;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productItem .productImgContainer {
+    /*border-radius: 50%; */
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* min-height: 200px; */
+    /* max-width: 400px; */
+    overflow: hidden;
+    display: block;
+    /* background-color: #000; */
+    margin: 0 auto;
+    transition: 0.3s ease;
+    scale: 0.95;
+    /* padding: 1rem; */
+}
+
+/* .productItem .productImgContainer img{
+    object-fit: contain;
+    max-width: 400px;
+    overflow: hidden;
+} */
+
+.productItem .productImgContainer:hover {
+    /* border-radius: 2%;
+    padding: 1.5rem; */
+    scale: 1;
+}
+
+.productItem .itemDetails {
+    text-align: center;
+}
+.productItem .itemDetails .itemName {
+    margin: 1.5rem 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.productItem .itemDetails .itemDesc {
+    font-weight: 300;
+    color: #737373;
+    font-size: 16px;
+}
+
+.productItem .itemDetails .price {
+    color: #0631a7;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.productItem .itemDetails .cancelledPrice {
+    color: #6a6a6a;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-decoration: line-through;
+    margin-bottom: 1rem;
+}
+
+.productItem .priceBar > * {
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    overflow: hidden;
+    height: 100%;
+    padding: 10px 10px;    
+   
+}
+
+.productItem .priceBar .buyNow {
+    border: 1px solid #0631a7;
+    background-color: #0631a7;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 0 35px 35px 0;
+     border: 1px solid #0631a7;
+    /* border-radius: 35px; */
+}
+
+.productItem .priceBar .wishlist {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #0631a7;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 35px 0 0 35px;
+      border: 1px solid #0631a7;
+}
+
+@media (max-width: 1766.91px) {
+    .productItem .itemDetails .price {
+        font-size: 2rem;
+    }
+}

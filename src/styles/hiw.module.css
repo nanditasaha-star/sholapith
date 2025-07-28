@@ -1,0 +1,35 @@
+.hiwSec1{
+    padding: 4rem 0;
+}
+.hiwSec2,
+.hiwSec3,
+.hiwSec4,
+.hiwSec5,
+.hiwSec6{
+    padding: 4rem 0;
+}
+
+.hiwSec3,.hiwSec5{
+    background-color: #0631a7;
+}
+
+.processStep {
+    padding: 0.7rem 3rem;
+    font-family: "Vinteage Glamour";
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+@media(max-width: 992px){
+    .hiwSec1{
+    padding-bottom: 0rem;
+}
+.hiwSec2,
+.hiwSec3,
+.hiwSec4,
+.hiwSec5,
+.hiwSec6{
+    padding: 2rem 0;
+}
+}

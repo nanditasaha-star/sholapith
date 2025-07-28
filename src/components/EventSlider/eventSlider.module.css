@@ -1,0 +1,16 @@
+.event{
+    margin: 3rem 0;
+    border-radius: 5rem;
+    background-color: #0631a7;
+}
+.carouselImageContainer{
+    border-top-left-radius: 5rem ;
+    border-bottom-left-radius: 5rem ;
+}
+.eventNo{
+    border-radius: 10rem;
+    padding: 8px;
+    background-color: #f58c37;
+    line-height: 1;
+    margin-right: 10px;
+}

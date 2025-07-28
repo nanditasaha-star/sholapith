@@ -1,0 +1,76 @@
+.header {
+    /* padding: 20px 0; */
+    /* background-color: var(--primary-color); */
+    background-color: #01248c;
+}
+
+.header ul li a{
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+/* header hamburger style  */
+
+.hamburger {
+    position: relative;
+    height: 0.2rem;
+    width: 3rem;
+    background: transparent;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger span,
+.hamburger span::before,
+.hamburger span::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger span::before {
+    top: -7px;
+}
+
+.hamburger span::after {
+    bottom: -7px;
+}
+
+.hamburger.cross span {
+    background-color: transparent;
+}
+
+.hamburger.cross span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.hamburger.cross span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+.phoneNumber {
+    margin-left: 1.5rem;
+    border-left: 1px solid #ffffff;
+    padding-left: 2rem;
+}
+
+.phoneNumber a {
+    color: #f58c37;
+    text-decoration: none;
+}
+
+.phoneNumber a img {
+    width: 1.4rem;
+    margin-right: 0.5rem;
+}

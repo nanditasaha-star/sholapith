@@ -1,0 +1,164 @@
+/* common styles  */
+.abtusSec1,
+.abtusSec2,
+.abtusSec3,
+.abtusSec4,
+.abtusSec5 {
+    padding: 5rem 0;
+}
+
+.abtusSec2 {
+    padding-top: 0 !important;
+}
+
+/* about us section  */
+.productCount {
+    background-color: #0631a7;
+    padding: 4rem 1.6rem;
+    border: 5px solid #fff;
+    border-radius: 6.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productCount>p {
+    margin-bottom: 0 !important;
+    font-family: Vinteage Glamour;
+    color: #fff;
+    font-size: 20px;
+}
+
+.productCount>p span {
+    display: block;
+    font-size: 5rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.abtusSec2 .productCountList {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.abtusSec2 .productCountList li {
+    list-style: none;
+}
+
+.abtusSec2 .productCountList li>.productCount {
+    height: 25rem;
+    width: 16rem;
+    border-radius: 10rem;
+    text-align: center;
+    transition: 0.3s ease-in;
+}
+
+.abtusSec2 .productCountList li>.productCount>p {
+    font-size: 2.6rem;
+}
+
+.abtusSec2 .productCountList li:not(:nth-of-type(2)) .productCount {
+    background-color: #ededed;
+}
+
+.abtusSec2 .productCountList li:not(:nth-of-type(2)) .productCount>p {
+    color: #0631a7;
+}
+
+.abtusSec3 {
+    position: relative;
+    z-index: 2;
+    /* padding: 7% 0; */
+    color: #fff;
+    background: linear-gradient(180deg, rgb(27, 21, 101), rgba(103, 4, 108, 0.6392156863));
+    /* background-image: linear-gradient(180deg, rgb(25, 19, 90), rgba(103, 4, 108, 0.6392156863)), url(../images/webp/about-bg.webp); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+}
+
+.abtusSec3::before {
+    position: absolute;
+    /* content: ""; */
+    top: -8%;
+    left: 0;
+    z-index: -1;
+    height: 415.022px;
+    width: 100%;
+    /* background: url("../images/about-us/white-curve.svg") no-repeat center; */
+    background-size: cover;
+    background-position: top;
+}
+
+.abtusSec3::after {
+    position: absolute;
+    /* content: ""; */
+    bottom: -10%;
+    left: 0;
+    z-index: -1;
+    height: 415.022px;
+    width: 100%;
+    /* background: url("../images/about-us/about-curve02.svg") no-repeat center; */
+    background-size: cover;
+    background-position: top;
+}
+
+.abtusSec3 .abtusSec3List {
+    padding-left: 0;
+    margin-top: 2rem;
+}
+
+.abtusSec3 .abtusSec3List li {
+    padding: 0.5rem;
+    list-style: none;
+    border: 0.2px solid #ededed;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.abtusSec3 .abtusSec3List li>.listNo {
+    color: #f58c37;
+    font-family: Vinteage Glamour;
+    padding: 0rem 0.5rem;
+}
+
+.abtusSec4 {
+    background-color: #f58c37;
+    /* padding-top: 3%; */
+    /* padding-bottom: 7%; */
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+@media(max-width:992px) {
+    .abtusSec1,
+    .abtusSec2,
+    .abtusSec3,
+    .abtusSec4,
+    .abtusSec5 {
+        padding: 2.5rem 0;
+    }
+
+    .abtusSec2 .productCountList li>.productCount {
+        height: 18rem;
+        width: auto;
+    }
+
+    .abtusSec2 .productCountList li>.productCount>p {
+        font-size: 1.6rem;
+    }
+
+    .productCount>p span {
+        font-size: 3rem;
+    }
+    .productCount {
+        padding: 2rem 1rem;
+    }
+}
